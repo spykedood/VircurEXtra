@@ -1,0 +1,46 @@
+var Vircurex = {
+
+    cellvalue: function (a, b, c, d) {
+        var cellvalue = 0;
+
+        if (a === 'link') {
+            if (b === 'buy') {
+                cellvalue = $('a', '#buytable tr:nth-child(' + c + ') td.coinformat:nth-child(' + d + ')').text();
+            } else if (b === 'sell') {
+                cellvalue = $('a', '#selltable tr:nth-child(' + c + ') td.coinformat:nth-child(' + d + ')').text();
+            }
+        } else if (a === 'text') {
+            if (b === 'buy') {
+                cellvalue = $('.mainwindow #buytable  .mylists tr:nth-child(' + c + ') td.coinformat:nth-child(' + d + ')').text();
+            } else if (b === 'sell') {
+                cellvalue = $('.mainwindow #selltable .mylists tr:nth-child(' + c + ') td.coinformat:nth-child(' + d + ')').text();
+            } else if (b === 'rec') {
+                cellvalue = $('.mainwindow #exectable .mylists tr:nth-child(' + c + ') td.coinformat:nth-child(' + d + ')').text();
+            }
+        } else {
+            alert("Cellvalue 'a' input incorrect, link/text only! " + a);
+        }
+
+        cellvalue = BalanceBox.CleanUp(cellvalue);
+        //alert('5. ' + cellvalue);
+        return cellvalue;
+    },
+
+    //a=Location ie (.mainwindow .mylists) or ('a').
+    //b=Row number (just pass through variable 'a' from loop!).
+    //c=td nth child number.
+    getCellLocation: function (a, b, c, d) {
+        var cell = 'test';
+            if (a === 'mainwindow') {
+                if (b === 'buy') {
+                    cell = $('.mainwindow #buytable .mylists tr:nth-child(' + c + ') td.coinformat:nth-child(' + d + ')')[0];
+                } else if (b === 'sell'){
+                    cell = $('.mainwindow #selltable .mylists tr:nth-child(' + c + ') td.coinformat:nth-child(' + d + ')')[0];
+                } else if (b === 'rec'){
+                    cell = $('.mainwindow #exectable .mylists tr:nth-child(' + c + ') td.coinformat:nth-child(' + d + ')')[0];
+                }
+            } else {
+            alert("Cell Location 'a' input incorrect, mainwindow is only used for now! " + a);
+            }
+        return cell;
+    },

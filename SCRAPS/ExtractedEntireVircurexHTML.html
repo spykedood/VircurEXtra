@@ -1,0 +1,1108 @@
+
+<!DOCTYPE html><head>
+  <title>Bitcoin, Namecoin, Litecoin, Devcoin, IXCoin, PPCoin, Terracoin, Freicoin, Feathercoin, Primecoin (BTC/NMC/LTC/DVC/IXC/PPC/TRC/FRC/FTC/XPM) Exchange and Trading Platform</title>
+  <meta name="description" content="VirCurEx (Virtual Currency Exchange) allows you to store and trade your Bitcoins(BTC), Namecoins(NMC), Litecoins(LTC), IXCoin (IXC), Devcoins(DVC), Terracoin (TRC), Freicoin (FRC), Feathercoin (FTC), Primecoin (XPM) and PPCoin (PPC)
+  as well as buy and sell trade them for various currencies.">
+  <meta name="keywords" content="Bitcoin, Namecoin, Litecoin, Devcoin, Ixcoin, Terracoin, Freicoin, Feathercoin, Exchange, Primecoin, PPCoin, Trade, USD, EUR, Buy, Sell, Trade, Options">
+  <script type="text/javascript">
+//<![CDATA[
+window.__CF=window.__CF||{};window.__CF.AJS={"ga_key":{"ua":"UA-25164109-1","ga_bs":"2"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) { var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",mirage:{responsive:0,lazy:0},mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/abv=2908400176/"},atok:"1a57e34390369c16f2f02d22e93082bb",zone:"vircurex.com",rocket:"0",apps:{"ga_key":{"ua":"UA-25164109-1","ga_bs":"2"}}}];var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=!0;a.src="//ajax.cloudflare.com/cdn-cgi/nexp/abv=340409193/cloudflare.min.js";b.parentNode.insertBefore(a,b);}}catch(e){};
+//]]>
+</script>
+<link href="/assets/application-9c14205e7be4721936b0e095dd7cc91d.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/assets/application-e793f4a6a280dff4d89b4bc1041b0fff.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="Ns0T1IXeLteI+pI4OLFfJAwKEf7+PkCB0aDahPls6IM=" name="csrf-token" />
+    <script type="text/javascript">/* CloudFlare analytics upgrade */
+</script>
+  <style>
+    body
+    {
+      min-width:1280px; 
+      _width: expression( document.body.clientWidth > 1280 ? "1280px" : "auto" ); /* sets max-width for IE */
+    }
+  </style>
+		<script>
+			var l_del = ",";
+			var l_sep = ".";
+		</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-25164109-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+<body>
+	
+	<div class="banner">
+		<table id="top1">
+			<tr>
+				<td rowspan="2"><h1><a href="/welcome/index?locale=en">Vircurex</a></h1></td>
+				<td id="links"><a href="/welcome/login?locale=en">Login</a>
+					| <a href="/welcome/register?locale=en">Signup</a>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<a href="/welcome/set_de?locale=en"><img alt="De" border="0" height="24" src="/assets/de-8210875225c26266c38e90c495f951f7.png" width="24" /></a>
+					<a href="/welcome/set_en?locale=en"><img alt="Gb" border="0" height="24" src="/assets/gb-f1831f33562be4b4eac2c0748c24fb8f.png" width="24" /></a>
+					<a href="/welcome/set_cn?locale=en"><img alt="Cn" border="0" height="24" src="/assets/cn-53832728b77bc3c5c300f1fc71639ea1.png" width="24" /></a>
+					<a href="/welcome/set_ru?locale=en"><img alt="Ru" border="0" height="24" src="/assets/ru-da5855808085128f0566366cb4bef8fb.png" width="24" /></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<br/>
+	
+		<div id="balance_box">
+			
+		<script>
+			function setblinkColor(el){el.style.background="";}
+			if(typeof socket != 'undefined') {
+				  socket.on('ablv', function (data) {
+					console.log(data);
+				  	obj = JSON.parse(data);
+					var c;
+				  	for(var i0=0;i0<2;i0++) {
+					  	l_base = obj[i0]["base"];
+					  	l_alt = obj[i0]["alt"];
+					  	ele_bid = document.getElementById(l_base+"_"+l_alt+"_bid");
+					  	ele_ask = document.getElementById(l_base+"_"+l_alt+"_ask");
+					  	ele_last= document.getElementById(l_base+"_"+l_alt+"_last");
+					  	ele_volume= document.getElementById(l_base+"_"+l_alt+"_volume");
+					  	
+					  	if(ele_bid && obj[i0]["bid"] && l_base == "BTC") {
+							console.log("Push BID: ");
+							console.log("          oldValue=" + parseFloat(ele_bid.innerHTML) + " New value will be "+obj[i0]["bid"]);
+						  	ob = parseFloat(ele_bid.innerHTML)
+						  	if(isNaN(ob)) { ob = 0;}
+						  	if(obj[i0]["bid"] != ob) {
+							  	ele_bid.innerHTML  = format_number(obj[i0]["bid"],8,l_sep,l_del);
+							  	if(obj[i0]["bid"]>ob) {c="green";}
+							  	if(obj[i0]["bid"]<ob) {c="red";}
+							  	ele_bid.style.background=c;
+						  		setTimeout("setblinkColor("+l_base+"_"+l_alt+"_bid"+")",500);
+						  	}
+					  	} 
+					  	if(ele_ask && obj[i0]["ask"] && l_base == "BTC") {
+							console.log("Push ASK: ");
+							console.log("          oldValue=" + parseFloat(ele_ask.innerHTML) + " New value will be "+obj[i0]["ask"]);
+						  	ob = parseFloat(ele_ask.innerHTML);
+						  	if(isNaN(ob)) { ob = 0;}
+						  	if(obj[i0]["ask"] != ob) {
+							  	ele_ask.innerHTML  = format_number(obj[i0]["ask"],8,l_sep,l_del);
+							  	if(parseFloat(obj[i0]["ask"])>ob) {c="green";}
+							  	if(parseFloat(obj[i0]["ask"])<ob) {c="red";}
+							  	ele_ask.style.background=c;
+						  		setTimeout("setblinkColor("+l_base+"_"+l_alt+"_ask"+")",500);
+						  	}
+					  	}
+					  	
+					  	if(ele_last && obj[i0]["last"] && l_base == "BTC") {
+							console.log("Push LAST: ");
+							console.log("          oldValue=" + parseFloat(ele_last.innerHTML) + " New value will be "+obj[i0]["last"]);
+		
+						  	ob = parseFloat(ele_last.innerHTML);
+						  	if(isNaN(ob)) { ob = 0;}
+					  		ele_last.innerHTML  = format_number(obj[i0]["last"],8,l_sep,l_del);
+						  	if(obj[i0]["last"]>ob) {c="green";}
+						  	if(obj[i0]["last"]<ob) {c="red";}
+						  	ele_last.style.background=c;
+					  		setTimeout("setblinkColor("+l_base+"_"+l_alt+"_last"+")",500);
+					  	}
+				
+					  	if(ele_volume && obj[i0]["volume"] && l_base == "BTC") {
+				  			document.getElementById(l_base+"_"+l_alt+"_volume").innerHTML  = format_number(obj[i0]["volume"],0,l_sep,l_del);
+					  		ele_volume.innerHTML  = format_number(obj[i0]["volume"],4,l_sep,l_del);
+						  	ele_volume.style.background="grey";
+					  		setTimeout("setblinkColor("+l_base+"_"+l_alt+"_volume"+")",500);
+					  	}
+			}
+		  });
+		  
+		 }
+		  
+		</script>
+			<div class="mybox">
+			<table class="mylists" id="exinfobox" style="font-size: 70%">
+				<tr><td colspan=5><strong>BTC - Bitcoin</strong></td></tr>
+					<tr>
+		<th></th>
+		<th>Bid</th>
+		<th>Ask</th>
+		<th>Last</th>
+		<th>Volume</th>
+	</tr>
+	    		<tr>
+		      	<td>
+						<a href="/welcome/index?alt=eur&amp;base=btc&amp;locale=en">BTC/EUR</a>
+		      	</td>
+			        <td id="BTC_EUR_bid" class="coinformat">82.51000000</td><td id="BTC_EUR_ask" class="coinformat">91.99000000</td><td id="BTC_EUR_last" class="coinformat">82.51000000</td><td id="BTC_EUR_volume" class="coinformat">1.7609</td>
+	    	</tr>
+				<tr class="alt">
+		      	<td>
+						<a href="/welcome/index?alt=usd&amp;base=btc&amp;locale=en">BTC/USD</a>
+		      	</td>
+			        <td id="BTC_USD_bid" class="coinformat">95.10300000</td><td id="BTC_USD_ask" class="coinformat">97.28000000</td><td id="BTC_USD_last" class="coinformat">95.10304890</td><td id="BTC_USD_volume" class="coinformat">1.7509</td>
+	    	</tr>
+	    		<tr>
+		      	<td>
+						<a href="/welcome/index?alt=dgc&amp;base=btc&amp;locale=en">DGC/BTC</a>
+		      	</td>
+			        <td  id="BTC_DGC_bid" class="coinformat">0.00033058</td><td  id="BTC_DGC_ask" class="coinformat">0.00033499</td><td  id="BTC_DGC_last" class="coinformat">0.00033058</td><td  id="BTC_DGC_volume" class="coinformat">0.6499</td>
+	    	</tr>
+				<tr class="alt">
+		      	<td>
+						<a href="/welcome/index?alt=dvc&amp;base=btc&amp;locale=en">DVC/BTC</a>
+		      	</td>
+			        <td  id="BTC_DVC_bid" class="coinformat">0.00000056</td><td  id="BTC_DVC_ask" class="coinformat">0.00000057</td><td  id="BTC_DVC_last" class="coinformat">0.00000058</td><td  id="BTC_DVC_volume" class="coinformat">1.0395</td>
+	    	</tr>
+	    		<tr>
+		      	<td>
+						<a href="/welcome/index?alt=frc&amp;base=btc&amp;locale=en">FRC/BTC</a>
+		      	</td>
+			        <td  id="BTC_FRC_bid" class="coinformat">0.00006020</td><td  id="BTC_FRC_ask" class="coinformat">0.00007500</td><td  id="BTC_FRC_last" class="coinformat">0.00006020</td><td  id="BTC_FRC_volume" class="coinformat">1.0601</td>
+	    	</tr>
+				<tr class="alt">
+		      	<td>
+						<a href="/welcome/index?alt=ftc&amp;base=btc&amp;locale=en">FTC/BTC</a>
+		      	</td>
+			        <td  id="BTC_FTC_bid" class="coinformat">0.00152000</td><td  id="BTC_FTC_ask" class="coinformat">0.00159000</td><td  id="BTC_FTC_last" class="coinformat">0.00155052</td><td  id="BTC_FTC_volume" class="coinformat">3.1295</td>
+	    	</tr>
+	    		<tr>
+		      	<td>
+						<a href="/welcome/index?alt=ixc&amp;base=btc&amp;locale=en">IXC/BTC</a>
+		      	</td>
+			        <td  id="BTC_IXC_bid" class="coinformat">0.00006204</td><td  id="BTC_IXC_ask" class="coinformat">0.00007797</td><td  id="BTC_IXC_last" class="coinformat">0.00006310</td><td  id="BTC_IXC_volume" class="coinformat">0.8085</td>
+	    	</tr>
+				<tr class="alt">
+		      	<td>
+						<a href="/welcome/index?alt=ltc&amp;base=btc&amp;locale=en">LTC/BTC</a>
+		      	</td>
+			        <td  id="BTC_LTC_bid" class="coinformat">0.02621001</td><td  id="BTC_LTC_ask" class="coinformat">0.02631579</td><td  id="BTC_LTC_last" class="coinformat">0.02620000</td><td  id="BTC_LTC_volume" class="coinformat">39.3970</td>
+	    	</tr>
+	    		<tr>
+		      	<td>
+						<a href="/welcome/index?alt=nmc&amp;base=btc&amp;locale=en">NMC/BTC</a>
+		      	</td>
+			        <td  id="BTC_NMC_bid" class="coinformat">0.00675006</td><td  id="BTC_NMC_ask" class="coinformat">0.00689490</td><td  id="BTC_NMC_last" class="coinformat">0.00675006</td><td  id="BTC_NMC_volume" class="coinformat">6.2297</td>
+	    	</tr>
+				<tr class="alt">
+		      	<td>
+						<a href="/welcome/index?alt=nvc&amp;base=btc&amp;locale=en">NVC/BTC</a>
+		      	</td>
+			        <td  id="BTC_NVC_bid" class="coinformat">0.04690003</td><td  id="BTC_NVC_ask" class="coinformat">0.05499995</td><td  id="BTC_NVC_last" class="coinformat">0.04677459</td><td  id="BTC_NVC_volume" class="coinformat">0.3444</td>
+	    	</tr>
+	    		<tr>
+		      	<td>
+						<a href="/welcome/index?alt=ppc&amp;base=btc&amp;locale=en">PPC/BTC</a>
+		      	</td>
+			        <td  id="BTC_PPC_bid" class="coinformat">0.00154106</td><td  id="BTC_PPC_ask" class="coinformat">0.00158607</td><td  id="BTC_PPC_last" class="coinformat">0.00155102</td><td  id="BTC_PPC_volume" class="coinformat">24.3903</td>
+	    	</tr>
+				<tr class="alt">
+		      	<td>
+						<a href="/welcome/index?alt=trc&amp;base=btc&amp;locale=en">TRC/BTC</a>
+		      	</td>
+			        <td  id="BTC_TRC_bid" class="coinformat">0.00151014</td><td  id="BTC_TRC_ask" class="coinformat">0.00183000</td><td  id="BTC_TRC_last" class="coinformat">0.00151013</td><td  id="BTC_TRC_volume" class="coinformat">1.4234</td>
+	    	</tr>
+	    		<tr>
+		      	<td>
+						<a href="/welcome/index?alt=xpm&amp;base=btc&amp;locale=en">XPM/BTC</a>
+		      	</td>
+			        <td  id="BTC_XPM_bid" class="coinformat">0.00820000</td><td  id="BTC_XPM_ask" class="coinformat">0.00849900</td><td  id="BTC_XPM_last" class="coinformat">0.00849900</td><td  id="BTC_XPM_volume" class="coinformat">2.5478</td>
+	    	</tr>
+
+			</table>
+		</div>
+
+				<br/>
+	<div class="mybox">
+	  <table class="mylists" style="font-size: 70%;">
+	    <tr><th></th><th>Blocks</th><th>Difficulty</th><th>Network<br/>GH/sec</th></tr>
+	      <tr>
+	        <td>Bitcoin</td><td class="coinformat">251127</td><td class="coinformat">37,392,766.1365</td><td class="coinformat">223,041.0495</td>
+	      </tr>
+	      <tr class="alt">
+	        <td>Digitalcoin</td><td class="coinformat">341140</td><td class="coinformat">4.3850</td><td class="coinformat">0.3034</td>
+	      </tr>
+	      <tr>
+	        <td>Devcoin</td><td class="coinformat">100890</td><td class="coinformat">3,913,893.4097</td><td class="coinformat">21,011.0961</td>
+	      </tr>
+	      <tr class="alt">
+	        <td>Freicoin</td><td class="coinformat">32267</td><td class="coinformat">19,972.4786</td><td class="coinformat">732.6630</td>
+	      </tr>
+	      <tr>
+	        <td>Feathercoin</td><td class="coinformat">64494</td><td class="coinformat">173.9014</td><td class="coinformat">5.2905</td>
+	      </tr>
+	      <tr class="alt">
+	        <td>Ixcoin</td><td class="coinformat">152603</td><td class="coinformat">2,731,650.6516</td><td class="coinformat">21,998.1566</td>
+	      </tr>
+	      <tr>
+	        <td>Litecoin</td><td class="coinformat">403499</td><td class="coinformat">867.7640</td><td class="coinformat">26.3997</td>
+	      </tr>
+	      <tr class="alt">
+	        <td>Namecoin</td><td class="coinformat">126569</td><td class="coinformat">12,385,743.6613</td><td class="coinformat">125,602.5260</td>
+	      </tr>
+	      <tr>
+	        <td>Novacoin</td><td class="coinformat">35995</td><td class="coinformat">295.1871</td><td class="coinformat">2.4652</td>
+	      </tr>
+	      <tr class="alt">
+	        <td>Ppcoin</td><td class="coinformat">62966</td><td class="coinformat">756,590.0718</td><td class="coinformat">3,835.9839</td>
+	      </tr>
+	      <tr>
+	        <td>Terracoin</td><td class="coinformat">181105</td><td class="coinformat">5,254.9624</td><td class="coinformat">521.8925</td>
+	      </tr>
+	      <tr class="alt">
+	        <td>Primecoin</td><td class="coinformat">107569</td><td class="coinformat">0.0000</td><td class="coinformat">0.0000</td>
+	      </tr>
+	  </table>
+	</div>
+
+		    <br><br>
+		</div>
+	
+	<div class="mainwindow">
+		
+		
+		
+
+
+	<style>
+	blockquote {
+	  padding: 0 0 0 15px;
+	  margin: 0 0 18px;
+	  border-left: 5px solid #eeeeee;
+	}
+	blockquote p {
+	  margin-bottom: 0;
+	  font-size: 16px;
+	  font-weight: 300;
+	  line-height: 22.5px;
+	}
+	blockquote small {
+	  display: block;
+	  line-height: 18px;
+	  color: #999999;
+	}
+	blockquote small:before {
+	  content: '\2014 \00A0';
+	}
+	blockquote.pull-right {
+	  float: right;
+	  padding-left: 0;
+	  padding-right: 15px;
+	  border-left: 0;
+	  border-right: 5px solid #eeeeee;
+	}
+	blockquote.pull-right p, blockquote.pull-right small {
+	  text-align: right;
+	}
+	.page-header {
+	  padding-bottom: 17px;
+	  margin: 18px 0;
+	  border-bottom: 1px solid #eeeeee;
+	}
+	.page-header h1 {
+	  line-height: 1;
+	}
+	.well {
+	  min-height: 20px;
+	  width: 760px;
+	  padding: 19px;
+	  margin-bottom: 20px;
+	  background-color: #f5f5f5;
+	  border: 1px solid #eee;
+	  border: 1px solid rgba(0, 0, 0, 0.05);
+	  -webkit-border-radius: 4px;
+	  -moz-border-radius: 4px;
+	  border-radius: 4px;
+	  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	}
+	.well blockquote {
+	  border-color: #ddd;
+	  border-color: rgba(0, 0, 0, 0.15);
+	}
+	
+	.btn-large {
+	  padding: 9px 14px;
+	  font-size: 15px;
+	  line-height: normal;
+	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  border-radius: 5px;
+	}
+	.btn-large .icon {
+	  margin-top: 1px;
+	}
+	
+	.btn-primary,
+	.btn-primary:hover,
+	.btn-info,
+	.btn-info:hover {
+	  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	  color: #ffffff;
+	}
+	
+	.btn:hover {
+	  color: #333333;
+	  text-decoration: none;
+	  background-color: #e6e6e6;
+	  background-position: 0 -15px;
+	  -webkit-transition: background-position 0.1s linear;
+	  -moz-transition: background-position 0.1s linear;
+	  -ms-transition: background-position 0.1s linear;
+	  -o-transition: background-position 0.1s linear;
+	  transition: background-position 0.1s linear;
+	}
+	.btn:focus {
+	  outline: thin dotted;
+	  outline: 5px auto -webkit-focus-ring-color;
+	  outline-offset: -2px;
+	}
+	
+	
+	.btn-primary.active,
+	.btn-info.active {
+	  color: rgba(255, 255, 255, 0.75);
+	}
+	.btn-primary {
+	  background-color: #006dcc;
+	  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+	  background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+	  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+	  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+	  background-image: linear-gradient(top, #0088cc, #0044cc);
+	  background-repeat: repeat-x;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088cc', endColorstr='#0044cc', GradientType=0);
+	  border-color: #0044cc #0044cc #002a80;
+	  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	}
+	.btn-primary:hover,
+	.btn-primary:active,
+	.btn-primary.active,
+	.btn-primary.disabled,
+	.btn-primary[disabled] {
+	  background-color: #0044cc;
+	}
+	.btn-primary:active, .btn-primary.active {
+	  background-color: #003399 \9;
+	}
+	.btn-info {
+	  background-color: #49afcd;
+	  background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+	  background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+	  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4));
+	  background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+	  background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+	  background-image: linear-gradient(top, #5bc0de, #2f96b4);
+	  background-repeat: repeat-x;
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+	  border-color: #2f96b4 #2f96b4 #1f6377;
+	  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	}
+	.btn-info:hover,
+	.btn-info:active,
+	.btn-info.active,
+	.btn-info.disabled,
+	.btn-info[disabled] {
+	  background-color: #2f96b4;
+	}
+	.btn-info:active, .btn-info.active {
+	  background-color: #24748c \9;
+	}
+	button.btn, input[type="submit"].btn {
+	  *padding-top: 2px;
+	  *padding-bottom: 2px;
+	}
+	button.btn::-moz-focus-inner, input[type="submit"].btn::-moz-focus-inner {
+	  padding: 0;
+	  border: 0;
+	}
+	button.btn.large, input[type="submit"].btn.large {
+	  *padding-top: 7px;
+	  *padding-bottom: 7px;
+	}
+	.btn .caret {
+	  margin-top: 7px;
+	  margin-left: 0;
+	}
+	.btn:hover .caret {
+	  opacity: 1;
+	  filter: alpha(opacity=100);
+	}
+	.btn-primary .caret,
+	.btn-info .caret,
+	
+	.label {
+	  padding: 1px 4px 2px;
+	  -webkit-border-radius: 3px;
+	     -moz-border-radius: 3px;
+	          border-radius: 3px;
+	}
+	.label-info,
+	.badge-info {
+	  background-color: #3a87ad;
+	}
+	
+	</style>
+	
+	<div id="graphbox" style="width:730px;height:225px;"></div>
+	<br/>
+	
+	  	<style> a { outline: none; color: #1d417a; text-decoration: none; } a:hover { text-decoration: underline; } </style>
+	
+
+<script>
+	var startTagBid = "<table class='mylists mybox' style='font-size: 70%;display: inline-block; vertical-align: top; border: 0px solid;'><tr><td colspan=3><strong>Buy orders</strong></td></tr><tr><th style='text-align:center;'>Quantity<br/>[PPC]</th><th style='text-align:center;'>Price<br/>[PPC/BTC]</th><th>Volume<br/>[BTC]</th></tr>";
+	var endTag = "</table>";
+
+	var startTagAsk = "<table class='mylists mybox' style='font-size: 70%;display: inline-block; vertical-align: top; border: 0px solid;'><tr><td colspan=3><strong>Sell orders</strong></td></tr><tr><th style='text-align:center;'>Quantity<br/>[PPC]</th><th style='text-align:center;'>Price<br/>[PPC/BTC]</th><th>Volume<br/>[BTC]</th></tr>";
+	var startTagExec = "<table class='mylists mybox' style='font-size: 70%;display: inline-block; vertical-align: top; border: 0px solid;'><tr><td colspan=5><strong>Recently executed orders</strong></td></tr><tr><th>Date</th><th style='text-align:center;'>Quantity<br/>[PPC]</th><th style='text-align:center;'>Price<br/>[PPC/BTC]</th><th style='text-align:center;'>Volume <br/>[BTC]</th><th style='text-align:center;'></th></tr>";
+
+		if(typeof socket != 'undefined') {
+		  	socket.on('orderexecution', function (data) {obj = JSON.parse(data);reloadOrderexecution(obj)});
+		  	socket.on('orderbook_bid', function (data) {obj = JSON.parse(data);reloadOrderbook(0,obj)});
+		  	socket.on('orderbook_ask', function (data) {obj = JSON.parse(data);reloadOrderbook(1,obj)});
+		  }
+
+	function reloadOrderexecution(p_data) {
+		var vOut;
+		var cc;
+		var nMax=20;
+		
+		vOut = startTagExec;
+		cc = 0;
+    
+    	if(p_data.length < nMax) {nMax=p_data.length;}
+    
+		for(ii=0;ii<p_data.length;ii++) {
+	    	oei = p_data[ii];
+	    	cc = (cc+1) % 2;
+	    	if(cc == 1){
+	    		vOut += "<tr>";
+	    	} else {
+	    		vOut += "<tr class='alt'>";
+	    	}
+			vOut += "<td>"+ format_date(oei[0])+"</td>";
+				vOut += "<td class='coinformat'>" + format_number(oei[1]*oei[2],4,l_sep,l_del) + "</td>";			
+				vOut += "<td class='coinformat'>" + format_number(1.0/oei[1],8,l_sep,l_del) + "</td>";
+				vOut += "<td class='coinformat'>" + format_number(oei[2],4,l_sep,l_del) + "</td>";
+	    	vOut += "</tr>";
+ 		}
+ 	
+	 	vOut += "</table>";
+	 	document.getElementById("exectable").innerHTML  = vOut; 
+
+	}
+	
+	function reloadOrderbook(p_type,p_data) {
+		// 0 = Bid
+		// 1 = ask
+     var vOut;
+     var q2;
+     var cc;
+     var odb;
+     var nMax=20;
+          
+		if(p_type == 0) { vOut = startTagBid; }
+		if(p_type == 1) { vOut = startTagAsk; }
+	 
+		q2 = 0;
+		cc=0;
+     
+     	p_data_base = p_data["base"];
+		p_data_alt  = p_data["alt"];
+		p_data_data = p_data["res"];     
+     
+ 	 for(ii=0;ii<p_data_data.length;ii++) {
+
+		cc = (cc + 1) % 2;
+		if(cc == 1) {
+			vOut += "<tr>";
+		} else {
+ 	 		vOut += "<tr class='alt'>";
+		}
+
+	    odb = p_data_data[ii]
+      	q2 += odb[1]
+
+		if(p_type == 0) {
+				vOut += "<td class='coinformat'><a href='javascript:void(0)' onclick='SetSellAmount(q2)'>"+format_number(odb[1],4,l_sep,l_del)+"</a></td>";
+				vOut += "<td class='coinformat'><a href='javascript:void(0)' onclick='SetSellPrice(<odb[0])'>"+format_number(odb[0],8,l_sep,l_del)+"</a></td>";
+		}
+		if(p_type == 1) {
+			vOut += "<td class='coinformat'><a href='javascript:void(0)' onclick='SetBuyAmount(q2)'>"+format_number(odb[1],4,l_sep,l_del)+"</a></td>";
+			vOut += "<td class='coinformat'><a href='javascript:void(0)' onclick='SetBuyPrice(<odb[0])'>"+format_number(odb[0],8,l_sep,l_del)+"</a></td>";
+		}
+			vOut += "<td class='coinformat'>" + format_number(odb[1]*odb[0],4,l_sep,l_del) + "</td>";
+		vOut += "</tr>";
+	  }
+ 	 vOut = vOut + endTag;
+ 	 if(p_type == 0) {
+	 	document.getElementById("buytable").innerHTML  = vOut;
+	 } else {
+	 	document.getElementById("selltable").innerHTML  = vOut;
+	 }
+	}
+
+	$(function() {
+	     
+		var vOut;
+
+		     var jqxhr = $.ajax( "https://vircurex.com/api/async_orderbook_get_asks.json?base=BTC&alt=PPC")
+			    .done(function(p_data) {
+			    	reloadOrderbook(1,p_data) 
+		    	})
+		    	.fail(function() {})
+		    	.always(function() {});
+		    	
+			var jqxhr = $.ajax( "https://vircurex.com/api/async_orderbook_get_bids.json?base=BTC&alt=PPC")
+			    .done(function(p_data) {
+			    	reloadOrderbook(0,p_data) })
+		    	.fail(function() {})
+		    	.always(function() {});	    
+			var jqxhr = $.ajax( "https://vircurex.com/api/async_orderbook_get_execs.json?base=BTC&alt=PPC")
+			    .done(function(p_data) {
+			    	reloadOrderexecution(p_data) })
+		    	.fail(function() {})
+		    	.always(function() {});
+	    return;
+	
+	     vOut = startTagBid;
+	     
+	     reloadOrderbook(0,"[[&quot;0.00154106&quot;,&quot;134.82183&quot;],[&quot;0.00154105&quot;,&quot;126.09306929&quot;],[&quot;0.00154101&quot;,&quot;3000.0&quot;],[&quot;0.001541&quot;,&quot;999.0&quot;],[&quot;0.001511&quot;,&quot;944.129&quot;],[&quot;0.00142501&quot;,&quot;2000.0&quot;],[&quot;0.001425&quot;,&quot;1500.0&quot;],[&quot;0.00141999&quot;,&quot;2695.4297002&quot;],[&quot;0.00141109&quot;,&quot;500.0&quot;],[&quot;0.00141&quot;,&quot;2000.0&quot;],[&quot;0.0014002&quot;,&quot;2773.33219758&quot;],[&quot;0.00137&quot;,&quot;4.9&quot;],[&quot;0.00132002&quot;,&quot;526.47498522&quot;],[&quot;0.00131&quot;,&quot;1200.0&quot;],[&quot;0.00126&quot;,&quot;3300.0&quot;],[&quot;0.00125&quot;,&quot;800.0&quot;],[&quot;0.00123609&quot;,&quot;0.20231472&quot;],[&quot;0.00122&quot;,&quot;4.26&quot;],[&quot;0.001211&quot;,&quot;4024.0&quot;],[&quot;0.00121&quot;,&quot;2500.0&quot;],[&quot;0.00120481&quot;,&quot;830.0&quot;],[&quot;0.001095&quot;,&quot;2.35&quot;],[&quot;0.00098102&quot;,&quot;505.0&quot;],[&quot;0.00083101&quot;,&quot;503.0&quot;],[&quot;0.0008001&quot;,&quot;3000.0&quot;],[&quot;0.00079648&quot;,&quot;8.25116316&quot;],[&quot;0.00077&quot;,&quot;140.0&quot;],[&quot;0.0007214&quot;,&quot;5010.0&quot;],[&quot;0.00057095&quot;,&quot;16.50232632&quot;],[&quot;0.00040928&quot;,&quot;33.00465264&quot;],[&quot;0.00029339&quot;,&quot;66.00930528&quot;],[&quot;0.00021031&quot;,&quot;132.01861056&quot;],[&quot;0.00020022&quot;,&quot;100.0&quot;],[&quot;0.0002&quot;,&quot;10000.0&quot;],[&quot;0.00015075&quot;,&quot;264.03722112&quot;],[&quot;0.00010806&quot;,&quot;528.07444224&quot;],[&quot;0.000101&quot;,&quot;5000.0&quot;],[&quot;0.00007746&quot;,&quot;1056.14888448&quot;],[&quot;0.00005552&quot;,&quot;2112.29776896&quot;],[&quot;0.00003979&quot;,&quot;4224.59553792&quot;],[&quot;0.00002852&quot;,&quot;8449.19107584&quot;],[&quot;0.00002044&quot;,&quot;16898.38215168&quot;]]");
+	     reloadOrderbook(1,"[[&quot;0.00158607&quot;,&quot;456.69744&quot;],[&quot;0.00158608&quot;,&quot;220.0&quot;],[&quot;0.00159609&quot;,&quot;18.70963208&quot;],[&quot;0.001639&quot;,&quot;997.0&quot;],[&quot;0.001688&quot;,&quot;3414.495&quot;],[&quot;0.001689&quot;,&quot;997.0&quot;],[&quot;0.001739&quot;,&quot;997.0&quot;],[&quot;0.001781&quot;,&quot;8.84&quot;],[&quot;0.00178666&quot;,&quot;281.0&quot;],[&quot;0.001789&quot;,&quot;997.0&quot;],[&quot;0.00181&quot;,&quot;500.0&quot;],[&quot;0.001839&quot;,&quot;697.0&quot;],[&quot;0.00185&quot;,&quot;8.353876&quot;],[&quot;0.0018861&quot;,&quot;500.0&quot;],[&quot;0.001889&quot;,&quot;997.0&quot;],[&quot;0.00188999&quot;,&quot;500.0&quot;],[&quot;0.00189002&quot;,&quot;298.40000001&quot;],[&quot;0.0019&quot;,&quot;579.0075642&quot;],[&quot;0.001939&quot;,&quot;997.0&quot;],[&quot;0.00195&quot;,&quot;1009.98&quot;],[&quot;0.00196899&quot;,&quot;515.966&quot;],[&quot;0.001989&quot;,&quot;997.0&quot;],[&quot;0.00199&quot;,&quot;409.666042&quot;],[&quot;0.002&quot;,&quot;1457.47&quot;],[&quot;0.002039&quot;,&quot;997.0&quot;],[&quot;0.00205&quot;,&quot;1000.0&quot;],[&quot;0.002089&quot;,&quot;997.0&quot;],[&quot;0.0021&quot;,&quot;1001.996&quot;],[&quot;0.002139&quot;,&quot;997.0&quot;],[&quot;0.00215&quot;,&quot;1000.0&quot;],[&quot;0.002189&quot;,&quot;997.0&quot;],[&quot;0.0022&quot;,&quot;2.34&quot;],[&quot;0.00222223&quot;,&quot;225.0&quot;],[&quot;0.002239&quot;,&quot;997.0&quot;],[&quot;0.002289&quot;,&quot;997.0&quot;],[&quot;0.0023&quot;,&quot;648.702994&quot;],[&quot;0.002339&quot;,&quot;997.0&quot;],[&quot;0.002389&quot;,&quot;997.0&quot;],[&quot;0.002399&quot;,&quot;4320.0&quot;],[&quot;0.00240013&quot;,&quot;450.02057433&quot;],[&quot;0.002439&quot;,&quot;997.0&quot;],[&quot;0.002489&quot;,&quot;997.0&quot;],[&quot;0.00249&quot;,&quot;10000.0&quot;],[&quot;0.00249999&quot;,&quot;285.496808&quot;],[&quot;0.0025&quot;,&quot;1603.2825&quot;],[&quot;0.0026&quot;,&quot;54.0&quot;],[&quot;0.0027&quot;,&quot;5497.62520101&quot;],[&quot;0.0027295&quot;,&quot;17.74678736&quot;],[&quot;0.00275&quot;,&quot;47.0&quot;],[&quot;0.0028&quot;,&quot;64.72396&quot;],[&quot;0.002832&quot;,&quot;1059.56467852&quot;],[&quot;0.00285&quot;,&quot;423.0875&quot;],[&quot;0.00286&quot;,&quot;554.6&quot;],[&quot;0.0028657&quot;,&quot;144.0&quot;],[&quot;0.00291305&quot;,&quot;969.680955&quot;],[&quot;0.00295&quot;,&quot;24.59662266&quot;],[&quot;0.00299&quot;,&quot;2000.0&quot;],[&quot;0.00299991&quot;,&quot;499.5&quot;],[&quot;0.003&quot;,&quot;4492.82717351&quot;],[&quot;0.00300009&quot;,&quot;357.002984&quot;],[&quot;0.0031&quot;,&quot;100.0&quot;],[&quot;0.00317811&quot;,&quot;144.0&quot;],[&quot;0.0032&quot;,&quot;504.0&quot;],[&quot;0.0034&quot;,&quot;144.0&quot;],[&quot;0.00358022&quot;,&quot;400.0&quot;],[&quot;0.0038&quot;,&quot;99.5&quot;],[&quot;0.0039&quot;,&quot;410.235&quot;],[&quot;0.0041&quot;,&quot;82.1&quot;],[&quot;0.005&quot;,&quot;99.9&quot;],[&quot;0.0053&quot;,&quot;100.0&quot;],[&quot;0.0062&quot;,&quot;6.8999005&quot;],[&quot;0.0099&quot;,&quot;2625.0&quot;],[&quot;0.01&quot;,&quot;50.0&quot;],[&quot;0.015&quot;,&quot;300.0&quot;],[&quot;0.0196418&quot;,&quot;13.0&quot;],[&quot;0.02132306&quot;,&quot;2.77756171&quot;],[&quot;0.026997&quot;,&quot;99.0&quot;],[&quot;0.1&quot;,&quot;10.0&quot;],[&quot;0.17711&quot;,&quot;3.0&quot;],[&quot;1.0&quot;,&quot;1.0&quot;],[&quot;10000000.0&quot;,&quot;1.48304001&quot;]]");
+	});
+</script>
+<div><span id="buytable"></span><span width="5px">&nbsp;</span><span id="selltable"></span><span width="5px">&nbsp;</span><span id="exectable"></span></div>
+<br/>
+<br/>
+
+	  <script type="text/javascript">
+  var resizeTimer;
+  var chart;
+  $(document).ready(function() {
+	var w;
+	var dat=[];
+	var volume=[];
+	
+		dat.push([1373473800000,0.001675]);volume.push([1373473800000,1476.494169]);
+		dat.push([1373476500000,0.00170984]);volume.push([1373476500000,58.0]);
+		dat.push([1373489100000,0.001675]);volume.push([1373489100000,10.384011]);
+		dat.push([1373495400000,0.001661]);volume.push([1373495400000,0.633]);
+		dat.push([1373499900000,0.0016797]);volume.push([1373499900000,0.37925069]);
+		dat.push([1373501700000,0.001601]);volume.push([1373501700000,2176.90427454]);
+		dat.push([1373504400000,0.00169984]);volume.push([1373504400000,0.29438318]);
+		dat.push([1373505300000,0.00166888]);volume.push([1373505300000,251.51461229]);
+		dat.push([1373506200000,0.0016]);volume.push([1373506200000,209.49970274]);
+		dat.push([1373511600000,0.00164]);volume.push([1373511600000,34.39641266]);
+		dat.push([1373513400000,0.00174992]);volume.push([1373513400000,192.38369168]);
+		dat.push([1373517900000,0.00159]);volume.push([1373517900000,0.41152733]);
+		dat.push([1373524200000,0.00174992]);volume.push([1373524200000,0.67844307]);
+		dat.push([1373525100000,0.00174992]);volume.push([1373525100000,1.3992411]);
+		dat.push([1373527800000,0.00159001]);volume.push([1373527800000,57.14546951]);
+		dat.push([1373528700000,0.00159]);volume.push([1373528700000,490.23386813]);
+		dat.push([1373529600000,0.001581]);volume.push([1373529600000,3701.85342608]);
+		dat.push([1373530500000,0.00158101]);volume.push([1373530500000,39.25396584]);
+		dat.push([1373531400000,0.00158101]);volume.push([1373531400000,56.38889219]);
+		dat.push([1373532300000,0.001581]);volume.push([1373532300000,6.97943225]);
+		dat.push([1373533200000,0.001581]);volume.push([1373533200000,11.94596021]);
+		dat.push([1373535900000,0.00156]);volume.push([1373535900000,0.22499718]);
+		dat.push([1373536800000,0.00156]);volume.push([1373536800000,66.63151754]);
+		dat.push([1373537700000,0.001551]);volume.push([1373537700000,3032.63413913]);
+		dat.push([1373540400000,0.00155]);volume.push([1373540400000,1500.0]);
+		dat.push([1373542200000,0.00174992]);volume.push([1373542200000,0.37342073]);
+		dat.push([1373543100000,0.00155]);volume.push([1373543100000,279.35760453]);
+		dat.push([1373544000000,0.00155]);volume.push([1373544000000,2.12795229]);
+		dat.push([1373545800000,0.00153847]);volume.push([1373545800000,1065.54448495]);
+		dat.push([1373546700000,0.00153846]);volume.push([1373546700000,65.0]);
+		dat.push([1373550300000,0.00154999]);volume.push([1373550300000,2.0]);
+		dat.push([1373551200000,0.00154999]);volume.push([1373551200000,0.00789118]);
+		dat.push([1373553900000,0.001521]);volume.push([1373553900000,120.72378611]);
+		dat.push([1373554800000,0.00152101]);volume.push([1373554800000,818.56498793]);
+		dat.push([1373555700000,0.001521]);volume.push([1373555700000,98.71144043]);
+		dat.push([1373556600000,0.001521]);volume.push([1373556600000,42.67046025]);
+		dat.push([1373557500000,0.001501]);volume.push([1373557500000,746.57218323]);
+		dat.push([1373558400000,0.0015]);volume.push([1373558400000,917.27327108]);
+		dat.push([1373559300000,0.00148999]);volume.push([1373559300000,0.00016254]);
+		dat.push([1373562000000,0.00154999]);volume.push([1373562000000,0.00030975]);
+		dat.push([1373564700000,0.00153999]);volume.push([1373564700000,12.45975511]);
+		dat.push([1373565600000,0.00149101]);volume.push([1373565600000,0.01851015]);
+		dat.push([1373566500000,0.00154999]);volume.push([1373566500000,0.06663017]);
+		dat.push([1373567400000,0.00155]);volume.push([1373567400000,135.42227167]);
+		dat.push([1373571900000,0.00155]);volume.push([1373571900000,7.69803698]);
+		dat.push([1373584500000,0.00149101]);volume.push([1373584500000,0.582936]);
+		dat.push([1373586300000,0.00156]);volume.push([1373586300000,146.0]);
+		dat.push([1373589900000,0.00155]);volume.push([1373589900000,310.0]);
+		dat.push([1373592600000,0.0016]);volume.push([1373592600000,1220.0]);
+		dat.push([1373595300000,0.00149104]);volume.push([1373595300000,0.14550003]);
+		dat.push([1373596200000,0.00149201]);volume.push([1373596200000,135.67253854]);
+		dat.push([1373607900000,0.001492]);volume.push([1373607900000,236.15422412]);
+		dat.push([1373611500000,0.00170999]);volume.push([1373611500000,0.01727483]);
+		dat.push([1373616900000,0.001492]);volume.push([1373616900000,1058.61338098]);
+		dat.push([1373617800000,0.001492]);volume.push([1373617800000,1699.36319735]);
+		dat.push([1373618700000,0.00149]);volume.push([1373618700000,231.82112283]);
+		dat.push([1373619600000,0.00169899]);volume.push([1373619600000,0.0015]);
+		dat.push([1373620500000,0.00169899]);volume.push([1373620500000,0.0015]);
+		dat.push([1373635800000,0.001521]);volume.push([1373635800000,74.39665502]);
+		dat.push([1373636700000,0.001521]);volume.push([1373636700000,6.986]);
+		dat.push([1373642100000,0.001521]);volume.push([1373642100000,586.613761]);
+		dat.push([1373644800000,0.00152101]);volume.push([1373644800000,0.09126115]);
+		dat.push([1373650200000,0.00152101]);volume.push([1373650200000,0.0001619]);
+		dat.push([1373694300000,0.00157999]);volume.push([1373694300000,0.00079135]);
+		dat.push([1373695200000,0.00157999]);volume.push([1373695200000,62.79028164]);
+		dat.push([1373706900000,0.001531]);volume.push([1373706900000,0.00810061]);
+		dat.push([1373710500000,0.00158]);volume.push([1373710500000,160.00000096]);
+		dat.push([1373729400000,0.00155]);volume.push([1373729400000,99.65436097]);
+		dat.push([1373731200000,0.00158]);volume.push([1373731200000,110.0]);
+		dat.push([1373732100000,0.00155]);volume.push([1373732100000,904.5968194]);
+		dat.push([1373748300000,0.00158986]);volume.push([1373748300000,1.0]);
+		dat.push([1373749200000,0.00158986]);volume.push([1373749200000,543.6]);
+		dat.push([1373757300000,0.00153001]);volume.push([1373757300000,4.353695]);
+		dat.push([1373759100000,0.00172]);volume.push([1373759100000,2513.66397201]);
+		dat.push([1373760000000,0.00153001]);volume.push([1373760000000,4.353695]);
+		dat.push([1373760900000,0.00153001]);volume.push([1373760900000,45.362899]);
+		dat.push([1373770800000,0.0017]);volume.push([1373770800000,47.05882352]);
+		dat.push([1373773500000,0.00152101]);volume.push([1373773500000,6.0]);
+		dat.push([1373775300000,0.0016]);volume.push([1373775300000,13.75000625]);
+		dat.push([1373781600000,0.00152102]);volume.push([1373781600000,0.725]);
+		dat.push([1373782500000,0.00152102]);volume.push([1373782500000,0.764]);
+		dat.push([1373796000000,0.001531]);volume.push([1373796000000,0.89900895]);
+		dat.push([1373805000000,0.0015105]);volume.push([1373805000000,1000.0]);
+		dat.push([1373820300000,0.00157]);volume.push([1373820300000,445.40155249]);
+		dat.push([1373822100000,0.00157]);volume.push([1373822100000,111.82154273]);
+		dat.push([1373823000000,0.00151051]);volume.push([1373823000000,634.85636261]);
+		dat.push([1373823900000,0.00162]);volume.push([1373823900000,1009.88]);
+		dat.push([1373833800000,0.00167]);volume.push([1373833800000,387.10831092]);
+		dat.push([1373834700000,0.00167]);volume.push([1373834700000,104.01600298]);
+		dat.push([1373835600000,0.00167]);volume.push([1373835600000,5.90000234]);
+		dat.push([1373841000000,0.00167]);volume.push([1373841000000,150.01062]);
+		dat.push([1373841900000,0.00167]);volume.push([1373841900000,3.8761195]);
+		dat.push([1373842800000,0.00167]);volume.push([1373842800000,4.44898351]);
+		dat.push([1373863500000,0.0016129]);volume.push([1373863500000,302.56000306]);
+		dat.push([1373874300000,0.00159861]);volume.push([1373874300000,10.014956]);
+		dat.push([1373876100000,0.00165998]);volume.push([1373876100000,0.16045365]);
+		dat.push([1373886000000,0.00164]);volume.push([1373886000000,2.11584]);
+		dat.push([1373887800000,0.001669]);volume.push([1373887800000,534.57483052]);
+		dat.push([1373902200000,0.00160871]);volume.push([1373902200000,0.08007929]);
+		dat.push([1373903100000,0.00163]);volume.push([1373903100000,71.42511584]);
+		dat.push([1373904900000,0.001511]);volume.push([1373904900000,139.67260874]);
+		dat.push([1373907600000,0.00154011]);volume.push([1373907600000,446.96429713]);
+		dat.push([1373908500000,0.00154011]);volume.push([1373908500000,92.12358934]);
+		dat.push([1373916600000,0.00157883]);volume.push([1373916600000,52.86835836]);
+		dat.push([1373921100000,0.00154391]);volume.push([1373921100000,60.0]);
+		dat.push([1373922000000,0.00156882]);volume.push([1373922000000,50.0]);
+		dat.push([1373922900000,0.00156881]);volume.push([1373922900000,5.0]);
+		dat.push([1373927400000,0.00155999]);volume.push([1373927400000,18.0]);
+		dat.push([1373929200000,0.00154011]);volume.push([1373929200000,23.63250503]);
+		dat.push([1373933700000,0.00155998]);volume.push([1373933700000,0.25101572]);
+		dat.push([1373941800000,0.00155993]);volume.push([1373941800000,7.01674667]);
+		dat.push([1373956200000,0.00155993]);volume.push([1373956200000,4.14953319]);
+		dat.push([1373957100000,0.00155993]);volume.push([1373957100000,33.44803843]);
+		dat.push([1373958000000,0.00155993]);volume.push([1373958000000,10.14840378]);
+		dat.push([1373958900000,0.0016]);volume.push([1373958900000,188.19127209]);
+		dat.push([1373965200000,0.00155]);volume.push([1373965200000,234.862038]);
+		dat.push([1373979600000,0.00154012]);volume.push([1373979600000,13.53627]);
+		dat.push([1373980500000,0.00159999]);volume.push([1373980500000,12.48112673]);
+		dat.push([1373982300000,0.00159999]);volume.push([1373982300000,0.0161611]);
+		dat.push([1373984100000,0.00154011]);volume.push([1373984100000,75.84077135]);
+		dat.push([1373992200000,0.0016]);volume.push([1373992200000,152.09352684]);
+		dat.push([1374002100000,0.00154014]);volume.push([1374002100000,9.997881]);
+		dat.push([1374037200000,0.0016]);volume.push([1374037200000,22.0]);
+		dat.push([1374054300000,0.00154611]);volume.push([1374054300000,0.222]);
+		dat.push([1374062400000,0.00159999]);volume.push([1374062400000,28.59]);
+		dat.push([1374067800000,0.0016]);volume.push([1374067800000,9.15612357]);
+		dat.push([1374078600000,0.0016]);volume.push([1374078600000,1035.48799]);
+		dat.push([1374079500000,0.00154607]);volume.push([1374079500000,49.964204]);
+		dat.push([1374083100000,0.00154602]);volume.push([1374083100000,69.0]);
+		dat.push([1374086700000,0.00154616]);volume.push([1374086700000,216.811293]);
+		dat.push([1374098400000,0.00154639]);volume.push([1374098400000,920.02365285]);
+		dat.push([1374121800000,0.0016]);volume.push([1374121800000,625.0]);
+		dat.push([1374124500000,0.0016]);volume.push([1374124500000,625.0]);
+		dat.push([1374129900000,0.00154648]);volume.push([1374129900000,179.10584819]);
+		dat.push([1374130800000,0.00157]);volume.push([1374130800000,877.59020016]);
+		dat.push([1374132600000,0.00157]);volume.push([1374132600000,39.15]);
+		dat.push([1374133500000,0.00157]);volume.push([1374133500000,377.0]);
+		dat.push([1374134400000,0.00157]);volume.push([1374134400000,706.25979984]);
+		dat.push([1374135300000,0.001511]);volume.push([1374135300000,1248.0]);
+		dat.push([1374136200000,0.001511]);volume.push([1374136200000,499.74]);
+		dat.push([1374139800000,0.00159999]);volume.push([1374139800000,50.0]);
+		dat.push([1374142500000,0.0016]);volume.push([1374142500000,164.71354008]);
+		dat.push([1374146100000,0.0016]);volume.push([1374146100000,56.98962658]);
+		dat.push([1374151500000,0.00161014]);volume.push([1374151500000,538.95648772]);
+		dat.push([1374168600000,0.00152014]);volume.push([1374168600000,100.6150193]);
+		dat.push([1374171300000,0.00155]);volume.push([1374171300000,45.3047045]);
+		dat.push([1374173100000,0.00164838]);volume.push([1374173100000,481.2409241]);
+		dat.push([1374174000000,0.00158001]);volume.push([1374174000000,32.68211708]);
+		dat.push([1374175800000,0.00164838]);volume.push([1374175800000,290.92748106]);
+		dat.push([1374209100000,0.001635]);volume.push([1374209100000,52.18310308]);
+		dat.push([1374222600000,0.00164839]);volume.push([1374222600000,0.001521]);
+		dat.push([1374242400000,0.0016449]);volume.push([1374242400000,65.0]);
+		dat.push([1374272100000,0.00161013]);volume.push([1374272100000,36.926]);
+		dat.push([1374293700000,0.00161013]);volume.push([1374293700000,1.37230331]);
+		dat.push([1374296400000,0.0016449]);volume.push([1374296400000,857.5901]);
+		dat.push([1374324300000,0.0016449]);volume.push([1374324300000,70.0100353]);
+		dat.push([1374327000000,0.0016449]);volume.push([1374327000000,303.973]);
+		dat.push([1374363900000,0.0016449]);volume.push([1374363900000,626.25]);
+		dat.push([1374388200000,0.00162345]);volume.push([1374388200000,70.79396924]);
+		dat.push([1374390000000,0.00161652]);volume.push([1374390000000,0.06186113]);
+		dat.push([1374390900000,0.0016349]);volume.push([1374390900000,624.6282]);
+		dat.push([1374399900000,0.00161343]);volume.push([1374399900000,61.22854847]);
+		dat.push([1374429600000,0.0016048]);volume.push([1374429600000,525.4743]);
+		dat.push([1374430500000,0.00157305]);volume.push([1374430500000,191.06263495]);
+		dat.push([1374431400000,0.00157304]);volume.push([1374431400000,548.9]);
+		dat.push([1374432300000,0.00157304]);volume.push([1374432300000,306.34235712]);
+		dat.push([1374433200000,0.00157304]);volume.push([1374433200000,361.5804591]);
+		dat.push([1374438600000,0.00157304]);volume.push([1374438600000,26.15]);
+		dat.push([1374442200000,0.00157304]);volume.push([1374442200000,4.0237]);
+		dat.push([1374443100000,0.00157304]);volume.push([1374443100000,74.33142664]);
+		dat.push([1374444000000,0.00156304]);volume.push([1374444000000,150.86588919]);
+		dat.push([1374444900000,0.00157481]);volume.push([1374444900000,0.06539716]);
+		dat.push([1374447600000,0.00156304]);volume.push([1374447600000,71.63135]);
+		dat.push([1374451200000,0.001532]);volume.push([1374451200000,2168.86707056]);
+		dat.push([1374468300000,0.001532]);volume.push([1374468300000,100.0]);
+		dat.push([1374475500000,0.0015848]);volume.push([1374475500000,102.08021546]);
+		dat.push([1374500700000,0.0015948]);volume.push([1374500700000,333.0]);
+		dat.push([1374503400000,0.00160111]);volume.push([1374503400000,258.0]);
+		dat.push([1374505200000,0.00159111]);volume.push([1374505200000,80.0]);
+		dat.push([1374511500000,0.00157001]);volume.push([1374511500000,89.64264999]);
+		dat.push([1374512400000,0.00157001]);volume.push([1374512400000,910.35735001]);
+		dat.push([1374516900000,0.00156002]);volume.push([1374516900000,2.65987546]);
+		dat.push([1374517800000,0.00155]);volume.push([1374517800000,1082.904607]);
+		dat.push([1374518700000,0.00152]);volume.push([1374518700000,1114.26385375]);
+		dat.push([1374519600000,0.00160111]);volume.push([1374519600000,1109.16585132]);
+		dat.push([1374520500000,0.00161111]);volume.push([1374520500000,614.61548881]);
+		dat.push([1374530400000,0.0015101]);volume.push([1374530400000,739.23010817]);
+		dat.push([1374535800000,0.0015101]);volume.push([1374535800000,12.145198]);
+		dat.push([1374555600000,0.0015101]);volume.push([1374555600000,227.26244992]);
+		dat.push([1374570000000,0.0015101]);volume.push([1374570000000,4.52069016]);
+		dat.push([1374574500000,0.0015101]);volume.push([1374574500000,4.9724765]);
+		dat.push([1374579900000,0.00151004]);volume.push([1374579900000,143.79816899]);
+		dat.push([1374583500000,0.00151004]);volume.push([1374583500000,10.047126]);
+		dat.push([1374588900000,0.00151002]);volume.push([1374588900000,65.17090453]);
+		dat.push([1374589800000,0.0015]);volume.push([1374589800000,250.14]);
+		dat.push([1374591600000,0.001493]);volume.push([1374591600000,1452.0399866]);
+		dat.push([1374592500000,0.001492]);volume.push([1374592500000,980.0]);
+		dat.push([1374593400000,0.001492]);volume.push([1374593400000,94.88]);
+		dat.push([1374596100000,0.001492]);volume.push([1374596100000,700.0]);
+		dat.push([1374598800000,0.00149201]);volume.push([1374598800000,533.0]);
+		dat.push([1374603300000,0.00154003]);volume.push([1374603300000,793.5641016]);
+		dat.push([1374606000000,0.00149203]);volume.push([1374606000000,10.00894]);
+		dat.push([1374615000000,0.001492]);volume.push([1374615000000,857.619253]);
+		dat.push([1374626700000,0.00146]);volume.push([1374626700000,1.870406]);
+		dat.push([1374628500000,0.00146]);volume.push([1374628500000,288.03795]);
+		dat.push([1374629400000,0.00146]);volume.push([1374629400000,986.8245]);
+		dat.push([1374647400000,0.00146001]);volume.push([1374647400000,23.522325]);
+		dat.push([1374672600000,0.00147001]);volume.push([1374672600000,150.0]);
+		dat.push([1374684300000,0.0014601]);volume.push([1374684300000,265.47295]);
+		dat.push([1374685200000,0.0014601]);volume.push([1374685200000,0.207335]);
+		dat.push([1374688800000,0.0014601]);volume.push([1374688800000,11.574909]);
+		dat.push([1374700500000,0.0014601]);volume.push([1374700500000,60.15909839]);
+		dat.push([1374703200000,0.00146011]);volume.push([1374703200000,133.33511113]);
+		dat.push([1374704100000,0.00146]);volume.push([1374704100000,680.43201]);
+		dat.push([1374725700000,0.00149998]);volume.push([1374725700000,0.00010234]);
+		dat.push([1374736500000,0.00146]);volume.push([1374736500000,880.04127623]);
+		dat.push([1374737400000,0.00145999]);volume.push([1374737400000,942.49763147]);
+		dat.push([1374739200000,0.00145999]);volume.push([1374739200000,44.12137545]);
+		dat.push([1374743700000,0.00145999]);volume.push([1374743700000,250.43049311]);
+		dat.push([1374754500000,0.00149998]);volume.push([1374754500000,10.43659345]);
+		dat.push([1374760800000,0.00149998]);volume.push([1374760800000,2.03131357]);
+		dat.push([1374761700000,0.00149998]);volume.push([1374761700000,6.39277177]);
+		dat.push([1374762600000,0.00142653]);volume.push([1374762600000,2.94100447]);
+		dat.push([1374763500000,0.00145101]);volume.push([1374763500000,0.25478399]);
+		dat.push([1374767100000,0.00142653]);volume.push([1374767100000,3.96771192]);
+		dat.push([1374768000000,0.00142653]);volume.push([1374768000000,7.95686935]);
+		dat.push([1374775200000,0.00142653]);volume.push([1374775200000,0.24230629]);
+		dat.push([1374780600000,0.00149998]);volume.push([1374780600000,235.0]);
+		dat.push([1374793200000,0.00143997]);volume.push([1374793200000,133.33511113]);
+		dat.push([1374808500000,0.00144]);volume.push([1374808500000,1947.92965701]);
+		dat.push([1374815700000,0.00144001]);volume.push([1374815700000,1.10389518]);
+		dat.push([1374829200000,0.00144]);volume.push([1374829200000,383.77777626]);
+		dat.push([1374830100000,0.00143997]);volume.push([1374830100000,145.04546514]);
+		dat.push([1374833700000,0.00144]);volume.push([1374833700000,35.0]);
+		dat.push([1374836400000,0.00143996]);volume.push([1374836400000,0.06944598]);
+		dat.push([1374847200000,0.00142652]);volume.push([1374847200000,0.22571465]);
+		dat.push([1374850800000,0.00140002]);volume.push([1374850800000,503.77744]);
+		dat.push([1374856200000,0.00140002]);volume.push([1374856200000,1696.0]);
+		dat.push([1374858000000,0.00145763]);volume.push([1374858000000,57.05278952]);
+		dat.push([1374865200000,0.0014001]);volume.push([1374865200000,86.8458]);
+		dat.push([1374866100000,0.0014001]);volume.push([1374866100000,5.082051]);
+		dat.push([1374910200000,0.00137001]);volume.push([1374910200000,381.964899]);
+		dat.push([1374932700000,0.00137001]);volume.push([1374932700000,3.32628341]);
+		dat.push([1374976800000,0.00142499]);volume.push([1374976800000,8.81763507]);
+		dat.push([1374982200000,0.00138001]);volume.push([1374982200000,1.38923375]);
+		dat.push([1374993000000,0.00138001]);volume.push([1374993000000,78.448381]);
+		dat.push([1375019100000,0.00142399]);volume.push([1375019100000,385.82618157]);
+		dat.push([1375020000000,0.00142399]);volume.push([1375020000000,217.91057446]);
+		dat.push([1375021800000,0.00142398]);volume.push([1375021800000,74.23496116]);
+		dat.push([1375023600000,0.00142398]);volume.push([1375023600000,3.30730066]);
+		dat.push([1375024500000,0.00142398]);volume.push([1375024500000,436.26010132]);
+		dat.push([1375026300000,0.00138]);volume.push([1375026300000,507.53710582]);
+		dat.push([1375034400000,0.00139999]);volume.push([1375034400000,143.08714286]);
+		dat.push([1375036200000,0.00142398]);volume.push([1375036200000,59.85303749]);
+		dat.push([1375038000000,0.00138001]);volume.push([1375038000000,66.838177]);
+		dat.push([1375062300000,0.00138011]);volume.push([1375062300000,9.79229019]);
+		dat.push([1375093800000,0.00145]);volume.push([1375093800000,117.9995]);
+		dat.push([1375094700000,0.00138011]);volume.push([1375094700000,0.00265084]);
+		dat.push([1375105500000,0.00138013]);volume.push([1375105500000,0.00241683]);
+		dat.push([1375118100000,0.00138011]);volume.push([1375118100000,94.687206]);
+		dat.push([1375124400000,0.0014]);volume.push([1375124400000,222.2183967]);
+		dat.push([1375130700000,0.00138011]);volume.push([1375130700000,18.675365]);
+		dat.push([1375131600000,0.00138011]);volume.push([1375131600000,5.55]);
+		dat.push([1375146900000,0.0014]);volume.push([1375146900000,14.66874]);
+		dat.push([1375162200000,0.00138011]);volume.push([1375162200000,75.15381606]);
+		dat.push([1375163100000,0.00138011]);volume.push([1375163100000,401.96]);
+		dat.push([1375164000000,0.0013801]);volume.push([1375164000000,647.995]);
+		dat.push([1375172100000,0.0013801]);volume.push([1375172100000,89.73918196]);
+		dat.push([1375182000000,0.0014184]);volume.push([1375182000000,6.98957557]);
+		dat.push([1375191900000,0.00138011]);volume.push([1375191900000,114.31811201]);
+		dat.push([1375194600000,0.00138011]);volume.push([1375194600000,448.0]);
+		dat.push([1375201800000,0.001381]);volume.push([1375201800000,7.0503]);
+		dat.push([1375213500000,0.00149399]);volume.push([1375213500000,20.0]);
+		dat.push([1375221600000,0.00142015]);volume.push([1375221600000,101.113717]);
+		dat.push([1375249500000,0.00138011]);volume.push([1375249500000,69.195483]);
+		dat.push([1375269300000,0.00139012]);volume.push([1375269300000,41.0]);
+		dat.push([1375288200000,0.00138]);volume.push([1375288200000,100.68832483]);
+		dat.push([1375293600000,0.00138001]);volume.push([1375293600000,1.98980914]);
+		dat.push([1375299900000,0.00139001]);volume.push([1375299900000,5.60000001]);
+		dat.push([1375302600000,0.00138001]);volume.push([1375302600000,137.0]);
+		dat.push([1375304400000,0.00138001]);volume.push([1375304400000,101.00359]);
+		dat.push([1375306200000,0.00141988]);volume.push([1375306200000,600.0]);
+		dat.push([1375327800000,0.00142987]);volume.push([1375327800000,291.79366803]);
+		dat.push([1375331400000,0.00139002]);volume.push([1375331400000,0.840127]);
+		dat.push([1375365600000,0.00140004]);volume.push([1375365600000,22.032177]);
+		dat.push([1375374600000,0.00199]);volume.push([1375374600000,34308.39993425]);
+		dat.push([1375380000000,0.001501]);volume.push([1375380000000,8.01]);
+		dat.push([1375385400000,0.00157993]);volume.push([1375385400000,579.9999]);
+		dat.push([1375391700000,0.00156991]);volume.push([1375391700000,17.0]);
+		dat.push([1375395300000,0.00141024]);volume.push([1375395300000,430.0]);
+		dat.push([1375396200000,0.00141024]);volume.push([1375396200000,10.002344]);
+		dat.push([1375399800000,0.00141023]);volume.push([1375399800000,0.89883333]);
+		dat.push([1375406100000,0.001411]);volume.push([1375406100000,672.88991558]);
+		dat.push([1375413300000,0.001411]);volume.push([1375413300000,179.04220392]);
+		dat.push([1375414200000,0.00149983]);volume.push([1375414200000,1.3]);
+		dat.push([1375419600000,0.00149984]);volume.push([1375419600000,3.0]);
+		dat.push([1375420500000,0.00141101]);volume.push([1375420500000,37.56030343]);
+		dat.push([1375440300000,0.00141023]);volume.push([1375440300000,778.91118975]);
+		dat.push([1375442100000,0.00141023]);volume.push([1375442100000,12.46019309]);
+		dat.push([1375445700000,0.00141023]);volume.push([1375445700000,11.96256225]);
+		dat.push([1375449300000,0.0014002]);volume.push([1375449300000,365.55186895]);
+		dat.push([1375457400000,0.00142906]);volume.push([1375457400000,7.07812742]);
+		dat.push([1375458300000,0.00144006]);volume.push([1375458300000,2.84647685]);
+		dat.push([1375461000000,0.00157992]);volume.push([1375461000000,795.97238836]);
+		dat.push([1375461900000,0.00154067]);volume.push([1375461900000,40.0]);
+		dat.push([1375462800000,0.0014606]);volume.push([1375462800000,510.0]);
+		dat.push([1375463700000,0.00160998]);volume.push([1375463700000,181.0]);
+		dat.push([1375464600000,0.00148]);volume.push([1375464600000,133.45755221]);
+		dat.push([1375465500000,0.00144071]);volume.push([1375465500000,10.423336]);
+		dat.push([1375466400000,0.00152983]);volume.push([1375466400000,130.73213]);
+		dat.push([1375468200000,0.001525]);volume.push([1375468200000,0.3357151]);
+		dat.push([1375469100000,0.00156994]);volume.push([1375469100000,1499.85271601]);
+		dat.push([1375473600000,0.00158899]);volume.push([1375473600000,100.0]);
+		dat.push([1375474500000,0.00158899]);volume.push([1375474500000,0.7]);
+		dat.push([1375478100000,0.0014809]);volume.push([1375478100000,23.98714]);
+		dat.push([1375479000000,0.00147088]);volume.push([1375479000000,18.90959317]);
+		dat.push([1375480800000,0.00147088]);volume.push([1375480800000,20.47976505]);
+		dat.push([1375483500000,0.00158899]);volume.push([1375483500000,2.0]);
+		dat.push([1375484400000,0.00147088]);volume.push([1375484400000,59.1424577]);
+		dat.push([1375488900000,0.00147101]);volume.push([1375488900000,27.944]);
+		dat.push([1375492500000,0.00150104]);volume.push([1375492500000,10.02204]);
+		dat.push([1375498800000,0.00150104]);volume.push([1375498800000,172.65273521]);
+		dat.push([1375501500000,0.001589]);volume.push([1375501500000,683.4149991]);
+		dat.push([1375502400000,0.00158901]);volume.push([1375502400000,1405.42143739]);
+		dat.push([1375503300000,0.00163999]);volume.push([1375503300000,2396.99995421]);
+		dat.push([1375507800000,0.001689]);volume.push([1375507800000,59.0]);
+		dat.push([1375509600000,0.001739]);volume.push([1375509600000,945.72201341]);
+		dat.push([1375511400000,0.001739]);volume.push([1375511400000,313.30428737]);
+		dat.push([1375512300000,0.001599]);volume.push([1375512300000,502.87223975]);
+		dat.push([1375513200000,0.001778]);volume.push([1375513200000,570.8728258]);
+		dat.push([1375515000000,0.001778]);volume.push([1375515000000,733.14381221]);
+		dat.push([1375517700000,0.001778]);volume.push([1375517700000,3.51430738]);
+		dat.push([1375519500000,0.001778]);volume.push([1375519500000,584.3218308]);
+		dat.push([1375524000000,0.00178]);volume.push([1375524000000,7.93]);
+		dat.push([1375537500000,0.00176892]);volume.push([1375537500000,1507.01426]);
+		dat.push([1375541100000,0.00160904]);volume.push([1375541100000,0.03505859]);
+		dat.push([1375542900000,0.00174994]);volume.push([1375542900000,261.74929]);
+		dat.push([1375543800000,0.0017]);volume.push([1375543800000,4.27165935]);
+		dat.push([1375545600000,0.00159903]);volume.push([1375545600000,500.0]);
+		dat.push([1375549200000,0.0017099]);volume.push([1375549200000,739.1]);
+		dat.push([1375555500000,0.00164914]);volume.push([1375555500000,100.0]);
+		dat.push([1375558200000,0.00164913]);volume.push([1375558200000,481.11111111]);
+		dat.push([1375561800000,0.00178665]);volume.push([1375561800000,354.71170301]);
+		dat.push([1375562700000,0.0017]);volume.push([1375562700000,3255.21558882]);
+		dat.push([1375565400000,0.00155]);volume.push([1375565400000,243.68575656]);
+		dat.push([1375566300000,0.00155001]);volume.push([1375566300000,18.9108026]);
+		dat.push([1375569000000,0.00155004]);volume.push([1375569000000,2.94891658]);
+		dat.push([1375569900000,0.00155007]);volume.push([1375569900000,50.965]);
+		dat.push([1375573500000,0.00156882]);volume.push([1375573500000,19.31907884]);
+		dat.push([1375575300000,0.00160885]);volume.push([1375575300000,29.946]);
+		dat.push([1375587900000,0.00163256]);volume.push([1375587900000,165.60924]);
+		dat.push([1375588800000,0.00163256]);volume.push([1375588800000,5.17001]);
+		dat.push([1375600500000,0.00162465]);volume.push([1375600500000,0.00015055]);
+		dat.push([1375606800000,0.00157801]);volume.push([1375606800000,0.09249932]);
+		dat.push([1375608600000,0.00157801]);volume.push([1375608600000,51.877038]);
+		dat.push([1375623900000,0.0015411]);volume.push([1375623900000,663.47306]);
+		dat.push([1375632000000,0.0015411]);volume.push([1375632000000,30.0]);
+		dat.push([1375633800000,0.00157472]);volume.push([1375633800000,0.2356563]);
+		dat.push([1375634700000,0.001541]);volume.push([1375634700000,12.76380801]);
+		dat.push([1375636500000,0.00150005]);volume.push([1375636500000,1500.72956656]);
+		dat.push([1375641000000,0.00154474]);volume.push([1375641000000,0.15830552]);
+		dat.push([1375642800000,0.00150005]);volume.push([1375642800000,9.998248]);
+		dat.push([1375652700000,0.00152007]);volume.push([1375652700000,46.966]);
+		dat.push([1375667100000,0.00149004]);volume.push([1375667100000,11.637586]);
+		dat.push([1375669800000,0.00148002]);volume.push([1375669800000,68.45855]);
+		dat.push([1375671600000,0.00148002]);volume.push([1375671600000,31.65567795]);
+		dat.push([1375682400000,0.00148109]);volume.push([1375682400000,17.70276026]);
+		dat.push([1375686000000,0.00148109]);volume.push([1375686000000,2.55259193]);
+		dat.push([1375686900000,0.00148109]);volume.push([1375686900000,281.83016474]);
+		dat.push([1375691400000,0.00148002]);volume.push([1375691400000,0.01559228]);
+		dat.push([1375695000000,0.00148002]);volume.push([1375695000000,700.03719]);
+		dat.push([1375700400000,0.00148002]);volume.push([1375700400000,699.9]);
+		dat.push([1375702200000,0.00148002]);volume.push([1375702200000,554.5348918]);
+		dat.push([1375704000000,0.00148002]);volume.push([1375704000000,10.0]);
+		dat.push([1375705800000,0.00148002]);volume.push([1375705800000,21.9999]);
+		dat.push([1375706700000,0.00148002]);volume.push([1375706700000,520.369301]);
+		dat.push([1375707600000,0.00148002]);volume.push([1375707600000,546.22487818]);
+		dat.push([1375709400000,0.00148001]);volume.push([1375709400000,340.14522]);
+		dat.push([1375712100000,0.00148002]);volume.push([1375712100000,12.01772105]);
+		dat.push([1375713900000,0.00148001]);volume.push([1375713900000,0.01419644]);
+		dat.push([1375717500000,0.00148001]);volume.push([1375717500000,91.0903]);
+		dat.push([1375719300000,0.00148001]);volume.push([1375719300000,249.993789]);
+		dat.push([1375720200000,0.00148001]);volume.push([1375720200000,8.3105]);
+		dat.push([1375728300000,0.00148001]);volume.push([1375728300000,22.95507952]);
+		dat.push([1375735500000,0.00148001]);volume.push([1375735500000,541.59259]);
+		dat.push([1375742700000,0.0014625]);volume.push([1375742700000,94.34075198]);
+		dat.push([1375756200000,0.00146251]);volume.push([1375756200000,20.23337364]);
+		dat.push([1375768800000,0.0014728]);volume.push([1375768800000,58.318832]);
+		dat.push([1375773300000,0.0014728]);volume.push([1375773300000,23.95012]);
+		dat.push([1375776000000,0.001516]);volume.push([1375776000000,429.9541787]);
+		dat.push([1375781400000,0.00151599]);volume.push([1375781400000,106.0]);
+		dat.push([1375784100000,0.00151599]);volume.push([1375784100000,0.01516181]);
+		dat.push([1375785000000,0.001516]);volume.push([1375785000000,993.57815759]);
+		dat.push([1375810200000,0.00151599]);volume.push([1375810200000,82.0]);
+		dat.push([1375818300000,0.00148622]);volume.push([1375818300000,21.18543597]);
+		dat.push([1375821900000,0.00149628]);volume.push([1375821900000,1.0]);
+		dat.push([1375822800000,0.0014625]);volume.push([1375822800000,298.37335]);
+		dat.push([1375823700000,0.0014625]);volume.push([1375823700000,473.42412449]);
+		dat.push([1375825500000,0.0014625]);volume.push([1375825500000,419.58617251]);
+		dat.push([1375829100000,0.0014625]);volume.push([1375829100000,626.97222224]);
+		dat.push([1375830000000,0.0014625]);volume.push([1375830000000,41.23361961]);
+		dat.push([1375830900000,0.0014625]);volume.push([1375830900000,55.47663493]);
+		dat.push([1375833600000,0.0014625]);volume.push([1375833600000,22.84996897]);
+		dat.push([1375839900000,0.0015201]);volume.push([1375839900000,60.974367]);
+		dat.push([1375841700000,0.00149894]);volume.push([1375841700000,266.41380205]);
+		dat.push([1375842600000,0.0015]);volume.push([1375842600000,61.23625]);
+		dat.push([1375847100000,0.0015]);volume.push([1375847100000,16.76805205]);
+		dat.push([1375852500000,0.001462]);volume.push([1375852500000,906.66541476]);
+		dat.push([1375853400000,0.00150896]);volume.push([1375853400000,195.33035372]);
+		dat.push([1375854300000,0.00150896]);volume.push([1375854300000,29.77902]);
+		dat.push([1375884000000,0.00150234]);volume.push([1375884000000,0.02969089]);
+		dat.push([1375888500000,0.0015599]);volume.push([1375888500000,639.89749818]);
+		dat.push([1375890300000,0.001589]);volume.push([1375890300000,998.75954394]);
+		dat.push([1375891200000,0.00147228]);volume.push([1375891200000,900.14565169]);
+		dat.push([1375893900000,0.001639]);volume.push([1375893900000,25.94250348]);
+		dat.push([1375894800000,0.001639]);volume.push([1375894800000,71.91184483]);
+		dat.push([1375895700000,0.001689]);volume.push([1375895700000,5014.97036394]);
+		dat.push([1375900200000,0.0016]);volume.push([1375900200000,61.312943]);
+		dat.push([1375901100000,0.001511]);volume.push([1375901100000,54.871]);
+		dat.push([1375906500000,0.00162893]);volume.push([1375906500000,0.00213816]);
+		dat.push([1375912800000,0.00156101]);volume.push([1375912800000,0.05418808]);
+		dat.push([1375926300000,0.00165]);volume.push([1375926300000,5.68999905]);
+		dat.push([1375929900000,0.0016]);volume.push([1375929900000,449.95615735]);
+		dat.push([1375930800000,0.00160801]);volume.push([1375930800000,195.07400282]);
+		dat.push([1375934400000,0.00164108]);volume.push([1375934400000,18.28064441]);
+		dat.push([1375938000000,0.00164108]);volume.push([1375938000000,10.03223929]);
+		dat.push([1375952400000,0.001561]);volume.push([1375952400000,0.01939824]);
+		dat.push([1375961400000,0.001561]);volume.push([1375961400000,740.59250586]);
+		dat.push([1375963200000,0.001561]);volume.push([1375963200000,145.67511]);
+		dat.push([1375973100000,0.00164929]);volume.push([1375973100000,1068.19278029]);
+		dat.push([1375974000000,0.001719]);volume.push([1375974000000,3492.33607541]);
+		dat.push([1375974900000,0.001719]);volume.push([1375974900000,91.71810446]);
+		dat.push([1375977600000,0.00168896]);volume.push([1375977600000,10.1697993]);
+		dat.push([1375978500000,0.00163059]);volume.push([1375978500000,5.0]);
+		dat.push([1375982100000,0.00161058]);volume.push([1375982100000,2.0]);
+		dat.push([1375983000000,0.00161058]);volume.push([1375983000000,3.0]);
+		dat.push([1375984800000,0.00169895]);volume.push([1375984800000,8127.982]);
+		dat.push([1375991100000,0.00161061]);volume.push([1375991100000,2.1508]);
+		dat.push([1375994700000,0.00160059]);volume.push([1375994700000,59.8805951]);
+		dat.push([1375997400000,0.00160057]);volume.push([1375997400000,1009.3137072]);
+		dat.push([1376002800000,0.00156101]);volume.push([1376002800000,109.710159]);
+		dat.push([1376011800000,0.00158103]);volume.push([1376011800000,27.0]);
+		dat.push([1376028000000,0.001561]);volume.push([1376028000000,136.77142]);
+		dat.push([1376029800000,0.001561]);volume.push([1376029800000,130.650694]);
+		dat.push([1376039700000,0.00155102]);volume.push([1376039700000,3.380118]);
+    chart = new Highcharts.Chart({
+          	chart: { renderTo: 'graphbox', type: 'line', width: 730 },
+          	title: { text: 'PPC/BTC' },
+          	xAxis: { type: 'datetime', dateTimeLabelFormats: { month: '%e. %b', year: '%b' } },
+          	legend: { enabled: false },
+		  	tooltip:{                     
+            	color : '#f0f',
+            	borderColor: '#058dc7'
+			},
+          
+          yAxis: [{
+              labels: { style: { color: '#89A54E' } },
+              title: { text: 'Price [BTC]', style: { color: '#89A54E' } }
+            }, {
+              title: { text: 'Volume [PPC]', style: { color: '#4572A7' } },
+              labels: { style: { color: '#4572A7' } },
+              opposite: true
+          }],
+			series: [ {
+				name  : 'Volume [PPC]',
+				animation: false,
+				type  : 'column',
+				marker: { enabled: false },
+				yAxis : 1,
+				color: '#4572A7',
+				data  : volume },
+            {
+              animation: false,
+              name  : 'Price [BTC]',
+              marker: { enabled: false },
+              color: '#89A54E',
+              data  : dat
+            }
+          ]
+      });
+  });
+
+</script>
+
+
+
+
+	</div>
+	<br/><br/><br/><br/>
+	<div class="disclaimer">
+		<a href="/welcome/help?locale=en">Help</a> 
+		<a href="/welcome/help?locale=en">Fees</a> 
+		<a href="/welcome/api?locale=en">API</a> 
+		<a href="/welcome/privacy?locale=en">Privacy</a>
+		<a href="/welcome/investors?locale=en">Investors</a>
+		<a href="/welcome/changelog?locale=en">Changelog</a>
+		<a href="/welcome/contactus?locale=en">Contact us</a>
+	</div>
+</body>
+</html>

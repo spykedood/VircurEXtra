@@ -1,0 +1,283 @@
+<div style="float:top; width:700px">
+ <div class="tabbable" style="height:300px; border-width: 1px; border-style: dotted; border-color: #D8D8D8; border-radius: 5px;">
+    <div class="tab-content">
+      <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab1" data-toggle="tab">Profit</a></li>
+          <li><a href="#tab2" data-toggle="tab">Price Diff.</a></li>
+          <li><a href="#tab3" data-toggle="tab">Info</a></li>
+          <li><a href="#tab4" data-toggle="tab">Readouts</a></li>
+          <li><a href="#tab5" data-toggle="tab">Site Status</a></li>
+          <li><a href="#tab6" data-toggle="tab">Chat</a></li>
+          <li><a href="#tab7" data-toggle="tab">Links</a></li>
+      </ul>
+    <div class="tab-pane active" id="tab1">
+        <table class="table bordered-table table-hover table-striped table-condensed">
+            <thead>
+              <tr>
+                <th>Profit Calculator</th>
+                <th>Balance</th>
+                <th>Initial Price</th>
+                <th>Current Value</th>
+                <th>Profit</th>
+                <th>Calculate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="alt">
+                <td class="coinType"></td>
+                <td class="Balance">
+                  <input style="width:100px; float:left" type="text" id="BalanceInput" placeholder="Enter Balance"/>
+                </td>
+                <td class="CoinInitBuy">
+                  <input style="width:100px" type="text" id="CoinInit" placeholder="Enter BTC"/>
+                </td>
+                <td class="CurrentValue">
+                </td>
+                <td class="ProfitTD">
+                </td>
+                <td class="Submit">
+                  <input class="btn" style="width:100px; min-height:25px" type="button" id="Calculate" value="Go">
+                </td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="tab-pane" id="tab2">
+        <table  class="table bordered-table table-hover table-striped table-condensed">
+            <thead>
+              <tr>
+                <th>Price difference profit</th>
+                <th>Difference</th>
+                <th>BTC to use</th>
+                <th>Profit</th>
+                <th></th>
+                <th>Calculate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="alt">
+                <td class="coinType"></td>
+                <td class="Balance">
+                  <input class="uneditable-input" style="width:100px" type="text" id="altDifference" disabled/>
+                </td>
+                <td class="CoinInitBuy">
+                  <input style="width:100px" type="text" id="BaseToUse" placeholder="Enter BTC"/>
+                </td>
+                <td class="ProfitTD2"></td>
+                <td>
+                </td>
+                <td class="Submit">
+                  <input class="btn" style="width:100px; min-height:25px" type="button" id="CalculateDiffProfit" value="Go">
+                </td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="tab-pane" id="tab3" style="overflow-x: hidden; overflow-y: hidden">
+      <img src = "chrome-extension://benicancoafaniifaangbddfgpgimehe/img/info.png"/>
+    </div>
+
+    <div class="tab-pane" id="tab4">
+      <table class="table bordered-table table-hover table-striped table-condensed">
+        <thead>
+          <tr>
+              <th>Readouts:</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td class="BSquan"></td>
+              <td>∴</td>
+              <td class="BSquan2">Value: </td>
+              <td> </td>
+          </tr>
+          <tr class="alt">
+              <td class="RecBS"></td>
+              <td>∴</td>
+              <td class="RecBS2">Value: </td>
+              <td></td>
+          </tr>
+          <tr>
+              <td class="shenanegans1"></td>
+              <td>∴</td>
+              <td class="shenanegans2"></td>
+              <td> </td>
+          </tr>
+          <tr class="alt">
+              <td class="shenanegans3"></td>
+              <td>∴</td>
+              <td class="shenanegans4"></td>
+              <td> </td>
+          </tr>
+          <tr>
+              <td class="shenanegans5"></td>
+              <td></td>
+              <td class="shenanegans6"></td>
+              <td></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <div class="tab-pane" id="tab5">
+    <table class="table bordered-table table-hover table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Exchanges</th>
+          <th>Status</th>
+            </td><td>
+          <th>Forums</th>
+          <th>Status</th>
+            </td><td>
+          <th>Misc</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MTgox:
+              <td id="Exchanges1"></td>
+          </td>
+            </td><td>
+          <td>BitcoinTalk:
+              <td id="Forums1"></td>
+          </td>
+            </td><td>
+          <td>bitcoincharts
+              <td id="Misc1"></td>
+          </td>
+        </tr>
+        <tr class="alt">
+          <td>BTC-e::
+              <td id="Exchanges2"></td>
+          </td>
+            </td><td>
+          <td>?
+              <td id="Forums2"></td>
+          </td>
+            </td><td>
+          <td>pool-x:
+              <td id="Misc2"></td>
+          </td>
+        </tr>
+        <tr>
+          <td>Aurumxchange
+              <td id="Exchanges3"></td>
+          </td>
+            </td><td>
+          <td>?
+              <td id="Forums3"></td>
+          </td>
+            </td><td>
+          <td>BTCGuild
+              <td id="Misc3"></td>
+          </td>
+        </tr>
+        <tr class="alt">
+          <td>bitstamp
+              <td id="Exchanges4"></td>
+          </td>
+            </td><td>
+          <td>?
+              <td id="Forums4"></td>
+          </td>
+            </td><td>
+          <td>?
+              <td id="Misc4"></td>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tab-pane" id="tab6">
+    <table class="table bordered-table table-hover table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>IRC network</th>
+          <th></th>
+          <th>Forums</th>
+          <th></th>
+          <th><a href = "https://crypto.cat/">CryptoCat Chatrooms</a></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>
+              <a href="irc://irc-server:port/channel"> VircurEXtra General</a>
+            </td>
+              <td></td>
+            <td>
+              <a href="https://bitcointalk.org/index.php?board=67.0"> BitcoinTalk AltCoins</a>
+            </td>
+              <td></td>
+            <td>
+              <a href=""> DayTrading</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <a href="irc://irc-server:port/channel"> Day Trading Chat</a>
+            </td>
+              <td></td>
+            <td>
+              <a href=""> BitcoinTalk AltCoins</a>
+            </td>
+              <td></td>
+            <td>
+              <a href=""> DayTrading</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+              <a href="irc://irc-server:port/channel"> blah</a>
+            </td>   
+              <td></td>
+            <td>
+              <a href=""> BitcoinTalk AltCoins</a>
+            </td>
+              <td></td>
+            <td>
+              <a href=""> DayTrading</a>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tab-pane" id="tab7">
+    <table class="table bordered-table table-hover table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Free Coins</th>
+          <th></th>
+          <th>Sub-Reddits</th>
+          <th></th>
+          <th>x</th>
+          <th></th>
+          <th>Help/Advice</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>
+              <a href=""> Fountains</a>
+            </td>
+              <td></td>
+            <td>
+              <a href=""> Sub-Reddits</a>
+            </td>
+              <td></td>
+            <td>
+              <a href=""> x</a>
+            </td>
+              <td></td>
+            <td>
+              <a href=""> Help/Advice</a>
+            </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>

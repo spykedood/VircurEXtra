@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VircurEXtra Options</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  </head>
+<body>
+	<div style="padding-top: 20px;" class="container">
+		<div class="tabbable span6 offset3" style="height:400px; border-width: 1px; border-style: dotted; border-color: #D8D8D8; border-radius: 5px;">
+	        <div class="tab-content">
+
+		        <ul class="nav nav-tabs">
+		           <li class="active"><a href="#tab1" data-toggle="tab">Enable/Disable Features</a></li>
+		           <li><a href="#tab2" data-toggle="tab">Custom values for features</a></li>
+		           <li><a href="#tab3" data-toggle="tab">About/Info</a></li>
+		        </ul>
+
+				<div class="tab-pane active" id="tab1">
+					<div class="row" style="padding-left: 5px;">
+						<div class="span5">
+							<h5>Select the features you want to enable/disable in VircurEXtra:</h5>
+						</div>
+
+						<div class="span5 well" style="padding-left: 5px;">
+		 				    <label class="checkbox" for="checkbox">
+						      <input type="checkbox" value="true" id="checkbox" name="checkbox"> Colour in buy orders</input>
+						  	</label>
+						    <label class="checkbox" for="checkbox">
+						      <input type="checkbox" value="true" id="checkbox" name="checkbox"> Colour in sell orders</input>
+						  	</label>
+						    <label class="checkbox" for="checkbox">
+						      <input type="checkbox" value="true" id="checkbox" name="checkbox"> Colour in quantities buy/sell</input>
+						  	</label>
+						    <label class="checkbox" for="checkbox">
+						      <input type="checkbox" value="true" id="checkbox" name="checkbox"> Enable strike throughs</input>
+						  	</label>
+						    <label class="checkbox" for="checkbox">
+						      <input type="checkbox" value="true" id="checkbox" name="checkbox"> Colour in recent buy/sell orders</input>
+						  	</label>
+		 				    <label class="checkbox" for="checkbox">
+						      <input type="checkbox" value="true" id="checkbox" name="checkbox"> Colour in buy orders</input>
+						  	</label>
+						    <label class="checkbox" for="checkbox">
+						      <input type="checkbox" value="true" id="checkbox" name="checkbox"> Colour in sell orders</input>
+						  	</label>
+						    <label class="checkbox" for="checkbox">
+						      <input type="checkbox" value="true" id="checkbox" name="checkbox"> Colour in quantities buy/sell</input>
+						  	</label>
+						    <label class="checkbox" for="checkbox">
+						      <input type="checkbox" value="true" id="checkbox" name="checkbox"> Enable strike throughs</input>
+						  	</label>
+						    <label class="checkbox" for="checkbox">
+						      <input type="checkbox" value="true" id="checkbox" name="checkbox"> Colour in recent buy/sell orders</input>
+						  	</label>
+						</div>							
+					</div>				      				     
+				    <button id="save">Save</button>
+				</div>
+		        
+		        <div class="tab-pane" id="tab2">
+					<div class="row" style="padding-left: 5px;">
+						<div class="span5">
+							<label>Auto-Refresh period</label><input class="input-small" type="text" placeholder="seconds">
+						</div>
+					</div>		
+
+		         	<button id="save">Save</button>
+		        </div>
+
+		        <div class="tab-pane" id="tab3">
+		         	<h3>test3</h3>
+		         	<button id="save">Save</button>
+		        </div>	        
+
+	        </div>
+	    </div>
+	</div>
+
+	<br>
+	<div id="status"></div>
+		<script src="../js/options.js"></script>
+	    <script src="../js/jquery-1.8.3.min.js"></script>
+    	<script src="../js/bootstrap.js"></script>
+  </body>
+</html>

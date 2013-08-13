@@ -1,0 +1,27 @@
+{
+	"name": "VircurEXtra",
+	"version": "0.1",
+	"manifest_version" : 2,
+	"description": "This extension extends the functionality of Vircurex",
+	"background" : {
+		"page" : "background.html"
+	},
+	"content_scripts": [
+	{
+		"matches": ["https://vircurex.com/*"],
+		"css": ["css/bootstrap.css"],
+		"js": ["js/options.js","js/jquery-1.8.3.min.js","js/bootstrap.js","js/moment.min.js","scripts/html.js","scripts/main.js"],
+		"run_at": "document_end"
+	}
+	],
+	"icons": {
+		"16": "icons/16.png",
+		"48": "icons/48.png",
+		"128": "icons/128.png"
+	},
+	"options_page" : "html/options.html",
+	 "web_accessible_resources" : [
+    	"html/injected_html.html",
+    	"/img/info.png"
+	 ]
+}

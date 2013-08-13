@@ -1,0 +1,8 @@
+09/08/2013:
+-Vircurex has changed method of displaying site.
+-ExtractedVircurexJS.js is the extracted js that injects the buy/sell/recent data&html into the page. Could learn a few things from it, along the lines of how to utilize the api (could utilize this info on another site).
+-Utilize the newly extracted html files for buy/sell/recent tables in order to continue business as usual.
+
+Will have to change:
+vircurex.cellvalue (change the targets to the new targets found in the above files).
+vircurex.getCellLocation (change the targets to the new targets found in the above files - could maybe remove right/maintop/timecell? Go through script to see if these are utilized elsewhere? yeah..).
